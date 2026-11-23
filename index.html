@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repaso JS - Mini-Tienda y Preferencias</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header id="header-principal">
+      <h1>Mi Mini-Tienda</h1>
+
+      <div class="acciones-header">
+        <!-- Repaso localStorage con strings simples (como en el portfolio) -->
+        <button id="btn-tema">🌙 Modo Oscuro</button>
+
+        <!-- Repaso burbujeo (Event Bubbling) y stopPropagation -->
+        <div class="menu-wrapper">
+          <button id="btn-menu">
+            🛒 Carrito (<span id="contador">0</span>)
+          </button>
+
+          <div id="panel-carrito" class="panel-oculto">
+            <h3>Tu Carrito</h3>
+            <div id="lista-carrito"></div>
+            <p class="total">Total: <strong id="total-precio">0€</strong></p>
+            <button id="btn-vaciar" class="btn-secundario">
+              Vaciar solo carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- Repaso localStorage.clear() -->
+        <button id="btn-reset-total" class="btn-peligro">Resetear Web</button>
+      </div>
+    </header>
+
+    <main>
+      <h2>Catálogo</h2>
+      <div id="catalogo" class="grid"></div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
